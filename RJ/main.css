@@ -2,6 +2,9 @@ body {
     background-image:url("pj.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;  
+
+
 }
 
 h1 {
@@ -12,17 +15,48 @@ nav{
     font-size: 40px;
     color: brown;
 }
-p{
+.home{
     font-size: 20px;
         background-color:rosybrown;
         border: 15px solid black;
         padding: 30px;
         margin: 20px;
 }
-img{
-    margin-right: 10%;
-    padding-top: 13%;
+.font{
+font-size: 130%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .link{
+    font-size: 30px;
+    padding-left: 30px;
+    font-weight:bolder;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -71,4 +105,12 @@ ol{
 .java{width: 60%; background-color:rgba(162, 216, 61, 0.774);}
 .html {width: 75%; background-color: rgb(67, 77, 223);}
 .python {width: 65%; background-color: rgb(219, 189, 54);}
-
+.ul Akshitha{
+    float: right;
+    background-color: red;
+}
+.Contact{
+    font-size: larger;
+    padding-inline-end: 100px;
+    padding-bottom:30%;
+}
